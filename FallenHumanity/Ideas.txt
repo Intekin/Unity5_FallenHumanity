@@ -1,0 +1,63 @@
+Constant start of a designated character, female. 
+
+
+
+**Skills**
+**Weapon skills**
+-*Swords*-
+-*Clubbs*-
+-*Spears*-
+-*shields*-
+-*Unarmed*-
+
+
+**Armor skills**
+-*Heavy Armor*-
+
+-*Medium Armor*-
+
+-*Light Armor*-
+
+**ranged skills**
+-Hunting bow
+-mounted archery
+-long bow
+-throwing knife
+-crossbow
+-ballista
+-cannon
+
+**magic skills**
+-*Elemental*-
+-lightning
+-fire
+-water
+-stone
+-air
+-*Arcane*-
+
+-*Summon*-
+-creatures
+-sigde weaponry
+-weapons
+-armor
+-misc items
+
+-*Blood*-
+
+-*Light*-
+
+-*Dark*-
+
+**survival skills**
+-first aid
+-medic
+-lockpic
+-repair
+-sneak
+-camoflage
+-cooking
+-alchemy
+-brewing
+-barting
+-speaking
