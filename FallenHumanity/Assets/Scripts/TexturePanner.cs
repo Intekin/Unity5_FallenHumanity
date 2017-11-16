@@ -18,7 +18,7 @@ public class TexturePanner : MonoBehaviour {
 	void Update () {
 		float offsetX = Time.time * timeMultiplier * panX;
 		float offsetY = Time.time * timeMultiplier * panY;
-		renderer.material.mainTextureOffset = new Vector2(offsetX, offsetY);
+		GetComponent<Renderer>().material.mainTextureOffset = new Vector2(offsetX, offsetY);
 	
 	}
 }

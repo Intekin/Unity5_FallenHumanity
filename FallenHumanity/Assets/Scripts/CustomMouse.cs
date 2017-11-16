@@ -19,7 +19,8 @@ public class CustomMouse : MonoBehaviour {
         vec.z = 0;
       
         // Create the actual Ray based on the screen vector above
-        ray = Camera.main.camera.ScreenPointToRay(vec);
+
+		ray = GetComponent<Camera>().ScreenPointToRay(vec);
 
         // This returns true if an object is hit by the ray
         if (Physics.Raycast(ray, out hit, raycastDistance)) //remove layerMask if you remove it in line above

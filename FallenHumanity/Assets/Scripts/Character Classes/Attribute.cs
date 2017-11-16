@@ -24,11 +24,11 @@ public class Attribute : BaseStat {
 public enum AttributeName
 {
 	Strength, 
-	Constitution,
+	Defense,
+	Magic,
+	MagicDefense,
 	Agility,
-	Speed,
-	Concentration,
-	Intelligence,
-	Willpower,
-	Charisma
+	Luck,
+	Evasion,
+	Accuracy
 }

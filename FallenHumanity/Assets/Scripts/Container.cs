@@ -17,6 +17,7 @@ public class Container: MonoBehaviour {
 	
 	public AudioClip openSound;
 	public AudioClip closeSound;
+	AudioSource audioSource;
 	
 	public string ContainerName = "Container";
 	public bool randomLoot = true;
@@ -38,6 +39,7 @@ public class Container: MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		audioSource = GetComponent<AudioSource> (); 
 		state = Container.State.Close;
 		
 		if(randomLoot)
@@ -47,8 +49,7 @@ public class Container: MonoBehaviour {
 		
 		if(parts.Length >0)
 			for(int i = 0; i < _defaultColors.Length; i++)
-				_defaultColors[i] = parts[i].renderer.material.GetColor("_Color");
-		
+				_defaultColors[i] = parts[i].GetComponent<Renderer>().material.GetColor("_Color");
 	
 		
 	}
@@ -106,14 +107,14 @@ public class Container: MonoBehaviour {
 		{
 			if(parts.Length >0)
 				for(int i = 0; i < _defaultColors.Length; i++)
-					parts[i].renderer.material.SetColor("_Color", Color.red);
+					parts[i].GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 			//Debug.Log("Higligth");
 		}
 		else
 		{
 			if(parts.Length >0)
 				for(int i = 0; i < _defaultColors.Length; i++)
-					parts[i].renderer.material.SetColor("_Color", _defaultColors[i]);
+					parts[i].GetComponent<Renderer>().material.SetColor("_Color", _defaultColors[i]);
 		}
 	}
 	
@@ -124,7 +125,7 @@ public class Container: MonoBehaviour {
 		if(!_used)
 			PopulateChest(numberOfItems);
 		
-		audio.PlayOneShot(openSound);
+		audioSource.PlayOneShot(openSound);
 		
 		state = Container.State.Open;
 		
@@ -143,7 +144,7 @@ public class Container: MonoBehaviour {
 	
 	private void Close()
 	{
-		audio.PlayOneShot(closeSound);
+		audioSource.PlayOneShot(closeSound);
 		state = Container.State.Close;
 
 		if(containerLoot.Count == 0 && _used)
