@@ -5,8 +5,10 @@
 //else if the saved version is the current version
 //Check to see if they have a character saved - check for character name
 
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Collections;
+
 
 public class MainMenu : MonoBehaviour {
 	public const float VERSION = 0.002f;
@@ -67,8 +69,7 @@ public class MainMenu : MonoBehaviour {
 	void Update () {
 		if(_levelToLoad == "")
 			return;
-		
-		Application.LoadLevel(_levelToLoad);
+		SceneManager.LoadScene(_levelToLoad);
 	}
 	
 	void OnGUI()

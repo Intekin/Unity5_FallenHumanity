@@ -59,7 +59,7 @@ public class myGUI : MonoBehaviour {
 	// Use this for initialization
 	void Start() 
 	{
-		Screen.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
 		RecalculateGUI();
 		DontDestroyOnLoad(this);
 	}
@@ -300,7 +300,7 @@ public class myGUI : MonoBehaviour {
     	pc.transform.GetComponent<CharacterMotor>().enabled = enable;
     	pc.transform.GetComponent<MouseLook>().enabled = enable;
     	Camera.main.GetComponent<MouseLook>().enabled = enable;
-		Screen.lockCursor = enable;
+		Cursor.lockState = CursorLockMode.None;
     }
 		
 	private void SetToolTip()

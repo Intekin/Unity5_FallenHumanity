@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System;
 
@@ -168,8 +169,7 @@ public class CharacterGenerator : MonoBehaviour {
 			UpdateCurrentVitalValue();
 			
 			//gsScript.SaveCharacterData();
-			
-			Application.LoadLevel("HexWorld_01");
+			SceneManager.LoadScene("HexWorld_01");
 		}
 	}
 	

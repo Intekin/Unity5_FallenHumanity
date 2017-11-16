@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransportSystem : GameSettings
 {
@@ -32,7 +33,7 @@ public class TransportSystem : GameSettings
 		{
 				PlayerSpawnPoint = spawnPoint;		//Sets the name of the spawnpoint to the PlayerSpawnPoint
 				Debug.Log ("Activate");
-				Application.LoadLevel (levelToLoad); 	//Loades Level
+                SceneManager.LoadScene(levelToLoad); 	//Loades Level
 		}
 
 		void OnGUI ()

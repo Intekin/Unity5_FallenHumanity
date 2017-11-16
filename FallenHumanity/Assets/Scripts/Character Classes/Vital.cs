@@ -15,7 +15,7 @@ public class Vital : ModifiedStat
 	public Vital()
 	{
 		_currentValue = 0;
-		ExpToLevel = 50;
+		ExpToLevel = 10;
 		LevelModifier = 1.1f;
 	}
 	
@@ -35,7 +35,6 @@ public class Vital : ModifiedStat
 				return _currentValue; }
 		set{ _currentValue = value;}
 	}
-
 }
 
 /// <summary>
@@ -44,6 +43,5 @@ public class Vital : ModifiedStat
 public enum VitalName 
 {
 	Health,
-	Stanima,
 	Mana
 }

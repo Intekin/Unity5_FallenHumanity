@@ -7,7 +7,7 @@
 /// </summary>
 public class BaseStat 
 {
-	public const int  STARTING_EXP_COST = 100; 	//publicly accessable starting exp.
+	public const int  STARTING_EXP_COST = 10; 	//publicly accessable starting exp.
 	
 	private int _baseValue;						//The base value of this stat
 	private int _buffValue;						//The buff amount to the stat
