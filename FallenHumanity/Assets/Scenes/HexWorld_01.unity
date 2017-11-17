@@ -2856,7 +2856,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
+    type: 10
     angle: 87.45241
     length: 10
     boxThickness: {x: 0, y: 0, z: 0}
@@ -2923,7 +2923,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 19.633667
+      value: 360
       mode: 0
       spread: 0
       speed:
@@ -3145,7 +3145,7 @@ ParticleSystem:
       cycleCount: 1
       repeatInterval: 0.01
     - serializedVersion: 2
-      time: 4
+      time: 2
       countCurve:
         serializedVersion: 2
         minMaxState: 0
@@ -3466,7 +3466,7 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 3277
+        atime0: 0
         atime1: 4241
         atime2: 65535
         atime3: 0
@@ -3479,8 +3479,8 @@ ParticleSystem:
         m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
-        key0: {r: 0.62352943, g: 0.9372549, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 0.62352943, g: 0.9372549, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3495,8 +3495,8 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 3277
-        atime1: 4241
+        atime0: 0
+        atime1: 3470
         atime2: 65535
         atime3: 65535
         atime4: 0
@@ -3860,13 +3860,13 @@ ParticleSystem:
           tangentMode: 0
         - serializedVersion: 2
           time: 1
-          value: 0.056001794
+          value: 0.07598411
           inSlope: 0.038546182
           outSlope: 0.038546182
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-        m_RotationOrder: 4
+        m_RotationOrder: 0
       minCurve:
         serializedVersion: 2
         m_Curve:
@@ -5800,7 +5800,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507244488}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1000, y: 562.3036, z: 1000}
+  m_LocalPosition: {x: 1000, y: 573.24, z: 1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13463,9 +13463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobPrefabs:
-  - {fileID: 100050, guid: 6682ba276a8939c4fb2294aba9f3a799, type: 2}
-  - {fileID: 100050, guid: be8c658b701672a47b06e2ae6c459249, type: 2}
-  - {fileID: 100050, guid: 120219f3f3db4434297b90e9fa44a594, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   spawnPoints:
   - {fileID: 1964623391}
   - {fileID: 1831162509}

@@ -11,7 +11,7 @@ using System.Collections;
 
 
 public class MainMenu : MonoBehaviour {
-	public const float VERSION = 0.002f;
+	public const float VERSION = 0.004f;
 	public bool clearPrefs = false;
 	
 	private string _levelToLoad = "";
@@ -132,6 +132,6 @@ public class MainMenu : MonoBehaviour {
 	
 	void GameVersion()
 	{
-		GUI.Label(new Rect(Screen.width - 200, Screen.height - 25, 200, 25), "**Closed Beta** ver: " + VERSION.ToString());
+		GUI.Label(new Rect(Screen.width - 200, Screen.height - 25, 200, 25), "**pre alpha** ver: " + VERSION.ToString());
 	}
 }
