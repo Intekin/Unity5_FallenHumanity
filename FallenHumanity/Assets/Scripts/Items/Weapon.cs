@@ -66,7 +66,9 @@ public enum DamageType
 	Slash,
 	Fire,
 	Ice,
-	Lightning
+	Lightning,
+    Water,
+    Earth
 }
 
 

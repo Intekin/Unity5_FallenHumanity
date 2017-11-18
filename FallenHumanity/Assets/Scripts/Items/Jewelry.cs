@@ -23,7 +23,6 @@ public class Jewelry : BuffItem {
 public enum JewelrySlot
 {
 	Earrings,
-	Circlet,
 	Necklaces,
 	Bracelets,
 	Rings,

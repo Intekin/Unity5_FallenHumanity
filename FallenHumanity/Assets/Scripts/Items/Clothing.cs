@@ -22,14 +22,12 @@ public class Clothing : BuffItem {
 
 public enum ArmorSlot{
 	Head,
-	Shoulder,
 	Bracers,
 	Hands,
 	Torso,
 	Waist,
 	Legs,
-	Feet,
-	Back
+	Feet
 }
 
 
